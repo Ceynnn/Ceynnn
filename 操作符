@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <string.h>
+
+//自定义函数
+int Add(int x, int y)
+{
+	int z = x + y;
+	return z;
+}
+
+int main()
+{
+  int a = 100;
+	int b = 20;
+	int max = 0;
+	max = (a > b ? a : b);//条件操作符
+	if (a > b)
+		max = a;
+	else
+		max = b;
+		
+  int arr[10] = { 0 };
+  arr[4];//下表引用操作符
+  
+  int a = 10;
+  int b = 20;
+  int sum=Add(a, b);//()-函数调用操作符
+   
+   
+  return 0;
+}
